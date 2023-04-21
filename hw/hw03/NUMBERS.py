@@ -15,3 +15,8 @@ def reversed_number(number):
 def sorted_numbers(list):
     sort_numbers = sorted(list)
     return f"Sorted numbers in ascending order: {sort_numbers}"
+
+
+print(edit_numbers(123))
+print(reversed_number(123))
+print(sorted_numbers([1, 10, 5, 100, 9]))
