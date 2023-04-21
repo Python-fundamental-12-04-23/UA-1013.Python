@@ -7,3 +7,4 @@ def count_amount_of_words(sentence):
 
     return f"{sentence.upper().replace('I', '&')}"
 
+print(count_amount_of_words('If the implementation is easy to explain, it may be a good idea.'))
