@@ -16,3 +16,10 @@ for i in list(number):
 print(result)
 print('reversed =', number[::-1])
 print('sorted',"".join(sorted(number)))
+#-------------------------------------------
+a, b = input(), input()
+print("a =", a)
+print("b =", b)
+a, b = b, a
+print("new a =", a)
+print("new b =", b)
