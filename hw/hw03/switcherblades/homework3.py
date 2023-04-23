@@ -7,6 +7,8 @@ with open("Zen.txt") as file:
 print("Count of 'better' =", text.count("better"))
 print("Count of 'never' =", text.count("never"))
 print("Count of 'is' =", text.count("is"))
+print(text.upper())
+text = text.replace("i","&")
 #-------------------------------------------
 number = input()
 result = 1
