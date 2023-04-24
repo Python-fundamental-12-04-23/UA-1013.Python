@@ -59,26 +59,26 @@ philosophy = """The Zen of Python, by Tim Peters
 55.If the implementation is easy to explain, it may be a good idea.
 56.Namespaces are one honking great idea -- let's do more of those!"""
 
-# count_better = philosophy.count('better')
-# count_never = philosophy.count('never')
-# count_is = philosophy.count('is')
-# print(count_better, count_never, count_is)
+count_better = philosophy.count('better')
+count_never = philosophy.count('never')
+count_is = philosophy.count('is')
+print(count_better, count_never, count_is)
 
 
-# words_to_uppercase = ["better", "never", "is"]
+words_to_uppercase = ["better", "never", "is"]
 
-# for word in words_to_uppercase:
-#     philosophy = philosophy.replace(word, word.upper())
+for word in words_to_uppercase:
+    philosophy = philosophy.replace(word, word.upper())
 
 # or this option:
-# philosophy = philosophy.replace('better', 'better'.upper())
-# philosophy = philosophy.replace('never', 'never'.upper())
-# philosophy = philosophy.replace('is', 'is'.upper())
-# print(philosophy)
+philosophy = philosophy.replace('better', 'better'.upper())
+philosophy = philosophy.replace('never', 'never'.upper())
+philosophy = philosophy.replace('is', 'is'.upper())
+print(philosophy)
 
 
-# i_replaced = philosophy.replace('i', '&')
-# print(i_replaced)
+i_replaced = philosophy.replace('i', '&')
+print(i_replaced)
 
 
 # _____________________________________________________________________________________________________________________________________
