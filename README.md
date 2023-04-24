@@ -2,5 +2,3 @@
 
 
 `hw/hwXX/nikname`
-
-lk
