@@ -2,11 +2,8 @@
 nums = [1, 2, 3, 4, 5, 6]
 
 def create_float(arr):
-    res = []
-
-    for num in arr:
-       res.append(float(num))
-    return res
+    arr[:] = [float(num) for num in arr]
+    return arr
 
 print(create_float(nums))
 
