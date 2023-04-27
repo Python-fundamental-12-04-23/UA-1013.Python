@@ -3,7 +3,7 @@ nums = [1, 2, 3, 4, 5, 6]
 
 def create_float(arr):
     res = []
-    
+
     for num in arr:
        res.append(float(num))
     return res
@@ -30,17 +30,12 @@ fibonacci(10)
 # third task
 
 def factorial(x):
-    arr = []
-    a, res = 1, 1
+     res = 1
 
-    while a < x + 1:
-        arr.append(a)
-        a += 1
-
-    for n in arr:
+     for n in range(1, x+1):
         res = res * n
 
-    return res
+     return res
 
 print(factorial(7))
         
