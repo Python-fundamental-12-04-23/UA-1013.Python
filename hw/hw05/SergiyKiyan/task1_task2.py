@@ -26,17 +26,22 @@ n2=1
 count=0
 if fibonacci_result<0:
     print("Please enter a positive integer, starting with 0")
+elif fibonacci_result==1:
+    print("Fibonacci row, count starts with  :", n1)
+
 else:
-    print("Fibonacci row, count starts with  :", 0,end=" ")
-    while count<fibonacci_result:
+    print("Fibonacci row, count starts with  :", end=" ")
+    while count<=fibonacci_result:
         if fibonacci_result==0:
             print(0,end=" ")
             break
+        print(n1, end=" ")
         combination=n1+n2
         n1=n2
         n2=combination
-        print(combination,end=" ")
+#        print(combination,end=" ")
         count+=1
+
 
 
 
