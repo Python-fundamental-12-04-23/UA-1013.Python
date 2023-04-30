@@ -27,7 +27,7 @@ count=0
 if fibonacci_result<0:
     print("Please enter a positive integer, starting with 0")
 else:
-    print("fibonacci row:", 0,end=" ")
+    print("Fibonacci row, count starts with  :", 0,end=" ")
     while count<fibonacci_result:
         if fibonacci_result==0:
             print(0,end=" ")
