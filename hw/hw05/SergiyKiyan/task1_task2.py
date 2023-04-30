@@ -10,7 +10,6 @@ for x in elements_of_int:
  #   elements_of_int[i]=x
  #   print(x,elements_of_int[i],i)
     i+=1
-
 print(elements_of_int)
 
 # Task2. Print Fibonacci numbers up to the entered number n,
