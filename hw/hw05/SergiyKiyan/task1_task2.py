@@ -46,20 +46,24 @@ else:
 # Ex: 0!=1, 1!=1, 2!=2, 3!=1*2*3=6
 
 
+print('\n')
 factorial_result=input("Enter last number for a factorial: ")
 try:
     factorial_result=int(factorial_result)
 except:
     print("Please enter a positive integer, starting with 0")
-n1=0
-n2=1
-count=0
+n1=1
+count=1
 if factorial_result<0:
     print("Please enter a positive integer, starting with 0")
 # elif factorial_result==1:
 #     print("factorial row, count starts with  :", n1
 else:
-    while count<factorial_result:
+    while n1<=factorial_result:
+        count=n1*count
+        n1+=1
+        print("Factorial result: ",count)
+
 
 
 
