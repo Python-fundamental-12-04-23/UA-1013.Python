@@ -127,50 +127,77 @@ from copy import deepcopy
 # s.add("tt")
 # print(s)
 
-print([i for i in dir(dict) if not i.startswith("_")])
-d = dict()
-print(d)
-d = dict((("a", 1), ("b", 2), ("c", 2)))
-print(d)
-d = {}
-print(d)
-d = {"key_1": "nfdsbkbg",
-     "key_2": 12,
-     1: 12}
-print(d)
+# print([i for i in dir(dict) if not i.startswith("_")])
+# d = dict()
+# print(d)
+# d = dict((("a", 1), ("b", 2), ("c", 2)))
+# print(d)
+# d = {}
+# print(d)
+# d = {"key_1": "nfdsbkbg",
+#      "key_2": 12,
+#      1: 12}
+# print(d)
+#
+# # d[[1,2]] = 1 #error
+# print(d["key_1"])
+# print(d.get("key_1"))
+# print(d.get("key_11"))
+# print(d.get("key_11", []))
+# # print(d["key_11"])
+# dd = d.fromkeys(["dsfds", 1, 12], [1, 2, 3])
+# dd["h"] = "dsf"
+# print(dd)
+# print(dd.popitem())
+# print(dd)
+# print(dd.pop(1))
+# print(dd)
+# dd[99] = 15
+# dd[68] = 15
+# print(dd)
+# print(list(enumerate(dd)))
+# dd.update({"aa": 1, "bb": 2})
+# print(dd)
+# print(dd.keys())
+# print(dd.values())
+# print(dd.items())
+# for key in dd:
+#      print(key, dd[key])
+# for item in dd.items():
+#      print(item)
+# for key, value in dd.items():
+#      print(key, value)
+#
+# print("key_2" in dd)
+# print("aa" in dd)
+#
+# for key, value in dd.items():
+#      if value == [1, 2, 3]:
+#           print(key, value)
+#
+# l = [i**2 for i in range(10)]
+# print(l)
+# l = []
+# for i in range(10):
+#      l.append(i**2)
+# s = {i for i in range(10)}
+# print(s)
+# d = {i:i**3 for i in range(10)}
+# print(d)
+#
+# t = (i for i in range(10))
+# print(t)
 
-# d[[1,2]] = 1 #error
-print(d["key_1"])
-print(d.get("key_1"))
-print(d.get("key_11"))
-print(d.get("key_11", []))
-# print(d["key_11"])
-dd = d.fromkeys(["dsfds", 1, 12], [1, 2, 3])
-dd["h"] = "dsf"
-print(dd)
-print(dd.popitem())
-print(dd)
-print(dd.pop(1))
-print(dd)
-dd[99] = 15
-dd[68] = 15
-print(dd)
-print(list(enumerate(dd)))
-dd.update({"aa": 1, "bb": 2})
-print(dd)
-print(dd.keys())
-print(dd.values())
-print(dd.items())
-for key in dd:
-     print(key, dd[key])
-for item in dd.items():
-     print(item)
-for key, value in dd.items():
-     print(key, value)
-
-print("key_2" in dd)
-print("aa" in dd)
-
-for key, value in dd.items():
-     if value == [1, 2, 3]:
-          print(key, value)
+l = [i ** 2 for i in range(10)]
+print(l)
+l = [i ** 2 for i in range(10) if i % 2]
+print(l)
+l = [(i, j, k) for i in range(10) for j in range(i) for k in range(i + j) if (i + j + k) % 2]
+print(l)
+l = []
+for i in range(10):
+    for j in range(i):
+        for k in range(i + j):
+            if (i + j + k) % 2:
+                l.append((i, j, k))
+print(l)
