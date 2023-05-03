@@ -3,9 +3,9 @@ f = open("Zen.txt", "r")
 f_string = f.read()
 
 #find the number of occurrences of the words and print
-find_better = f_string.find('better')
-find_never = f_string.find('never')
-find_is = f_string.find('is')
+find_better = f_string.count('better')
+find_never = f_string.count('never')
+find_is = f_string.count('is')
 print(find_better)
 print(find_never)
 print(find_is)
