@@ -48,7 +48,7 @@ from copy import deepcopy
 #
 # # sorted()
 # # reversed()
-# l = [1,2,3,4]
+# l = [1, 2, 3, 4]
 # print(l[1])
 # print(l[:])
 # print(l[2:])
@@ -192,7 +192,8 @@ l = [i ** 2 for i in range(10)]
 print(l)
 l = [i ** 2 for i in range(10) if i % 2]
 print(l)
-l = [(i, j, k) for i in range(10) for j in range(i) for k in range(i + j) if (i + j + k) % 2]
+l = [(i, j, k) for i in range(10) for j in range(i)
+     for k in range(i + j) if (i + j + k) % 2]
 print(l)
 l = []
 for i in range(10):
