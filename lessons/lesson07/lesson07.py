@@ -217,5 +217,7 @@ def f(x):
     return {"sin": math.sin(x),
             "cos": math.cos(x)}
 t = f(0.8)
-print(t)
-print(t.get("cos"))
+# print(t)
+# print(t.get("cos"))
+
+print(__name__)
