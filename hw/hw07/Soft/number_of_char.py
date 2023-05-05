@@ -3,16 +3,17 @@
 def number_of_char(string):
     """
 
-    :param  string :
+    :param  string
     :return: dict
 
     takes string and return dict with counted char in string
 
     """
-    dict = {}
+
+    my_dict = {}
 
     for char in string:
-        dict[char] = string.count(char)
-    return dict
+        my_dict[char] = string.count(char)
+    return my_dict
 
 
