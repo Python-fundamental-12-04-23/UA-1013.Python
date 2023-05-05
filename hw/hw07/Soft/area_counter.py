@@ -2,6 +2,8 @@
 
 def are_counter(shape, **kwargs):
     """
+
+
     float --> float
 
     returns are of triangle, rectangle or circle
@@ -25,7 +27,7 @@ def are_counter(shape, **kwargs):
         radius = kwargs['radius']
         area = round(pi * radius ** 2, 1)
         return area
-    
+
     else:
         return None
 
