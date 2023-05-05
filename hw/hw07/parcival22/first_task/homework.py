@@ -44,4 +44,4 @@ def letters(string):
     d = {l: string.count(l) for l in string}
     return d
 
-# -----------------
+# -------------------
