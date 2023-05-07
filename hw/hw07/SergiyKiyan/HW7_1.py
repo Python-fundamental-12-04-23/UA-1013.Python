@@ -58,9 +58,20 @@ else:
 # • input: "hello"
 # • output: {"h":1, "e":1,"l":2,"o":1}
 
-def number_of_characters(x):
+def number_of_characters(word):
     """he function that returns number of characters included in a string"""
-    x=list(x)
+    newlist=[]
+    for x in word:
+        b = x.find(x)
+        if x.find(x)==1:
+            newlist=[]
+
+
+
+
+
+
+    return
 
 
 
