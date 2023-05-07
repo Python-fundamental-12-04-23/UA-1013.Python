@@ -15,6 +15,7 @@ def largest_number(x1,x2):
     return largest
 
 print(largest_number(555,333))
+print()
 
 
 # Task2. Write a program that calculates the area of a rectangle,
@@ -50,7 +51,7 @@ elif user_choise==3:
 
 else:
     print("Unfrecognized shape for calculation, please enter number for 1 to 3")
-
+print()
 
 
 # Task3. Write a function that calculates the number of characters
@@ -59,23 +60,17 @@ else:
 # • output: {"h":1, "e":1,"l":2,"o":1}
 
 def number_of_characters(word):
-    """he function that returns number of characters included in a string"""
-    newlist=[]
+    """the function that returns number of characters included in a string"""
+    word_list=dict()
     for x in word:
-        b = x.find(x)
-        if x.find(x)==1:
-            newlist=[]
+        word_list[x]=word.count(x)
 
-
-
-
-
-
-    return
+    return word_list
 
 
 
 input_str="hello"
+print(number_of_characters((input_str)))
 
 
 
