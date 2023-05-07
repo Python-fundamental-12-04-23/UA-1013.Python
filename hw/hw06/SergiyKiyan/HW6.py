@@ -3,13 +3,13 @@
 # odd munber whicj are divisible by 3
 # number that are not divisible by 2 and 3
 
-for x in range(11):
+for x in range(1,11):
     if not x%2:
-        print("It is even number divisible by 2:  ",x)
+        print("It is even number divisible by 2 :  ",x)
     elif not x%3:
-        print("It is odd number divisible by 3:  ",x,x%3)
+        print("It is odd number divisible by 3 :  ",x)
     else:
-        print("number that are not divisible by 2 and 3: ",x)
+        print("number that are not divisible by 2 and 3 : ",x)
 
 
 # Task2. Write a script that checks the login that the user enters.
@@ -17,6 +17,7 @@ for x in range(11):
 # different, send an error message.
 # (need to use loop while
 
+print()
 login=input("Enter login name: ")
 true_login="First"
 while login!=true_login:
