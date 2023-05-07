@@ -23,12 +23,15 @@ print(largest_number(555,333))
 # main program depending on the user's choice)
 
 def area_of_rectangle(a,b):
+    """The function that returns the area of a rectangle"""
     return a*b
 
 def area_of_triangle(a,b):
+    """The function that returns the area of a triangle"""
     return a*b/2
 
 def area_of_circle(r):
+    """The function that returns the area of a circle """
     PI=3.14
     return PI*r**2
 
@@ -47,4 +50,21 @@ elif user_choise==3:
 
 else:
     print("Unfrecognized shape for calculation, please enter number for 1 to 3")
+
+
+
+# Task3. Write a function that calculates the number of characters
+# included in a given string
+# • input: "hello"
+# • output: {"h":1, "e":1,"l":2,"o":1}
+
+def number_of_characters(x):
+    """he function that returns number of characters included in a string"""
+    x=list(x)
+
+
+
+input_str="hello"
+
+
 
