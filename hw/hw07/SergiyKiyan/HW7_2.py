@@ -32,7 +32,7 @@ def reverse_list(l):
     return l[::-1]
     'return a list with the reverse order of l'
 
-#Task 6
+#Task 7
 # You were camping with your friends far away from home, but when it's time to go back, you realize that your fuel is running out and the nearest pump is 50 miles away! You know that on average, your car runs on about 25 miles per gallon. There are 2 gallons left.
 #
 # Considering these factors, write a function that tells you if it is possible to get to the pump or not.
@@ -46,7 +46,7 @@ def zero_fuel(distance_to_pump, mpg, fuel_left):
     else:
         return False
 
-#Task 6
+#Task 8
 # Create a function which answers the question "Are you playing banjo?".
 # If your name starts with the letter "R" or lower case "r", you are playing banjo!
 #
@@ -59,3 +59,8 @@ def are_you_playing_banjo(name):
         name = name + " does not play banjo"
     # Implement me!
     return name
+
+#Task 9
+#Complete the method that takes a boolean value and return a "Yes" string for true, or a "No" string for false.
+def bool_to_word(boolean):
+    return "Yes" if boolean else "No"
