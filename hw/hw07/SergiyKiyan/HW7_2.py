@@ -64,3 +64,14 @@ def are_you_playing_banjo(name):
 #Complete the method that takes a boolean value and return a "Yes" string for true, or a "No" string for false.
 def bool_to_word(boolean):
     return "Yes" if boolean else "No"
+
+
+#Task 10
+#Consider an array/list of sheep where some sheep may be missing from their place.
+# We need a function that counts the number of sheep present in the array (true means present).
+def count_sheeps(sheep):
+    sum=0
+    for i in sheep:
+        if i:
+             sum+=i
+    return sum
