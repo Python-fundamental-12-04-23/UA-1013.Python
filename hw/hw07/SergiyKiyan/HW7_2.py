@@ -30,7 +30,7 @@ def reverse(st):
 #In this kata you will create a function that takes in a list and returns a list with the reverse order.
 def reverse_list(l):
     return l[::-1]
-    'return a list with the reverse order of l'
+
 
 #Task 7
 # You were camping with your friends far away from home, but when it's time to go back, you realize that your fuel is running out and the nearest pump is 50 miles away! You know that on average, your car runs on about 25 miles per gallon. There are 2 gallons left.
