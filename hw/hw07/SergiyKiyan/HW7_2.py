@@ -80,6 +80,15 @@ def count_sheeps(sheep):
 #Some new animals have arrived at the zoo.
 # The zoo keeper is concerned that perhaps the animals do not have the right tails.
 # To help her, you must correct the broken function to make sure that the second argument (tail),
-# is the same as the last letter of the first argument (body) - otherwise the tail wouldn't fit!
+# is the same as the last letter of the first argument (body) - otherwise the tail wouldn't fit
+#If the tail is right return true, else return false.
 
-If the tail is right return true, else return false.
+def correct_tail(body, tail):
+    x=0
+    for i in body:
+        i=body[x]
+        x+=1
+    if body[x-1]==tail[0]:
+        return True
+    else:
+        return False
