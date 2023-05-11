@@ -1,5 +1,6 @@
-def pass_check(password):
+password = input("Let's check your password!\nWrite it here: ")
 
+def pass_check(password):
     import string
 
     status1 = False
@@ -21,7 +22,8 @@ def pass_check(password):
         status4 = True
 
     if status1 and status2 and status3 and status4:
-        return "Password is valid"
+        return "Password is valid :)"
     else:
-        return "Invalid password"
+        return "Invalid password :("
 
+print(pass_check(password))
