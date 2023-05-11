@@ -1,8 +1,8 @@
 # Task 1
 # Write a script, which of the two entered numbers will determine which of them is more and which is less.
 # Take into account the case of equality of numbers.
-first_number = int(input('Enter first number:'))
-second_number = int(input('Enter second number:'))
+first_number = int(input('Enter the first number:'))
+second_number = int(input('Enter the second number:'))
 if first_number > second_number:
     print("Number " + str(first_number) + " is greater than " + str(second_number))
 elif first_number < second_number:
