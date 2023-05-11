@@ -1,4 +1,5 @@
-password = input("Let's check your password!\nWrite it here: ")
+user_password = input("Let's check your password!\nWrite it here: ")
+
 
 def pass_check(password):
     import string
@@ -26,4 +27,5 @@ def pass_check(password):
     else:
         return "Invalid password :("
 
-print(pass_check(password))
+
+print(pass_check(user_password))
