@@ -1,5 +1,4 @@
 #task 2 clasic approach
-import re
 
 password=input("Enter password to check:")
 status = True
@@ -30,7 +29,6 @@ print("Password is corrrect" if status else "Password incorrect")
 import math
 
 def password_check(password):
-    list(password)
     return all([
     re.search(".+[a-z]", password),
     re.search(".+[A-Z]", password),
@@ -39,6 +37,6 @@ def password_check(password):
     re.search(".{6,16}", password),
     ])
 
-    #return result
+import re
 password=input("Enter password to check:")
 print("Password is corrrect" if password_check(password) else "Password incorrect")
