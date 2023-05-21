@@ -181,11 +181,12 @@
 # print(s[-5:3])
 # print(s[3:-5])
 
-s = '<->'.join(['This', 'will', 'join', 'all', 'words', 'into', 'a','string'])
-print(s)
-print(s.split("-"))
-s = "test test,  test"
-print(s.split())
-print(s.find("qq"))
-print(s.find("es"))
-print(s.find("es", 3))
+# s = '<->'.join(['This', 'will', 'join', 'all', 'words', 'into', 'a','string'])
+# print(s)
+# print(s.split("-"))
+# s = "test test,  test"
+# print(s.split())
+# print(s.find("qq"))
+# print(s.find("es"))
+# print(s.find("es", 3))
+print(__name__)
