@@ -23,15 +23,14 @@ def get_weather():
     w.detailed_status
     w.wind()
     w.humidity
-    w.temperature('celsius')
+    temper=w.temperature('celsius')['temp']
     w.rain
     w.heat_index
     w.clouds
     # temp=w.temperature
     # print(temp)
 
-    result = f"City: {city}\n status: {w.detailed_status}\n/" \
-             f" {w.temperature('celsius')}\n Hum:{w.humidity}\n clouds: {w.clouds}\n heat_index: {w.heat_index}"
+    result = f"City: {city}\n status: {w.detailed_status}\nTemp: {temper}\n Hum:{w.humidity}\n clouds: {w.clouds}\n heat_index: {w.heat_index}"
     label['text'] = result
 
     return result
