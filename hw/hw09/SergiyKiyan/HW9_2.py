@@ -1,28 +1,3 @@
-# import pygame
-# pygame.init()
-# gameDisplay=pygame.display.set_mode((800,600))
-# pygame.display.set_caption('My first game')
-# clock=pygame.time.Clock()
-# WHITE=(255,255,255)
-# c1, c2, c3 = 0, 0, 0
-# done=False
-# i=0
-# while not done:
-#     i+=1
-#     for event in pygame.event.get():
-#         if event.type==pygame.QUIT:
-#             done=True
-#             print("User asked to quit")
-#         # elif event.type==pygame.KEYDOWN:
-#         #     print("User pressed a key Down")
-#         # elif event.type == pygame.KEYUP:
-#         #     print("User pressed a key UP")
-#     gameDisplay.fill((c1 + i % 255, c2 + i % 125, i % 55))
-#     pygame.draw.polygon(gameDisplay, (128, 0, 128), [(10, 10), (100, 100), (100, 200), (200, 200)])
-# #    gameDisplay.fill(WHITE)
-#     pygame.display.update()
-#     clock.tick(60)
-
 
 import pygame
 
