@@ -64,7 +64,6 @@ while run:
             COORD_X = DELTA_STEP
     if keys[pygame.K_RIGHT]:
         COORD_X = COORD_X + DELTA_STEP
-        print(COORD_X)
         if COORD_X>=WIDTH_DISPLAY-WIDTH_RECTANGLE:
             COORD_X = WIDTH_DISPLAY-WIDTH_RECTANGLE
     if keys[pygame.K_UP]:
