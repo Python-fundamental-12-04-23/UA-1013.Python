@@ -15,9 +15,9 @@ def get_weather():
     owm = OWM(API_KEY)
     mgr = owm.weather_manager()
 
-    input_city = entry_field.get()
+    city = entry_field.get()
 
-    observation = mgr.weather_at_place(input_city)
+    observation = mgr.weather_at_place(city)
     w = observation.weather
 
     w.detailed_status
@@ -30,7 +30,8 @@ def get_weather():
     # temp=w.temperature
     # print(temp)
 
-    result = f"City: {input_city}\n, {w.detailed_status}\n, {w.temperature('celsius')}\n,Hum:{w.humidity}"
+    result = f"City: {city}\n status: {w.detailed_status}\n/" \
+             f" {w.temperature('celsius')}\n Hum:{w.humidity}\n clouds: {w.clouds}\n heat_index: {w.heat_index}"
     label['text'] = result
 
     return result
