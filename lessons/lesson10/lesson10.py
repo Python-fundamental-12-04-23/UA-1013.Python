@@ -54,22 +54,22 @@
 
 
 
-class A:
-    def echo(self):
-        print("echo", type(self), id(self), self)
-    @classmethod
-    def echo_class(cls):
-        print("echo_class", type(cls), id(cls), cls)
-    @staticmethod
-    def echo_static():
-        print("fooBoo")
-print(id(A), A)
-a1 = A()
-a1.echo()
-a1.echo_class()
-A.echo_class()
-a1.echo_static()
-A.echo_static()
+# class A:
+#     def echo(self):
+#         print("echo", type(self), id(self), self)
+#     @classmethod
+#     def echo_class(cls):
+#         print("echo_class", type(cls), id(cls), cls)
+#     @staticmethod
+#     def echo_static():
+#         print("fooBoo")
+# print(id(A), A)
+# a1 = A()
+# a1.echo()
+# a1.echo_class()
+# A.echo_class()
+# a1.echo_static()
+# A.echo_static()
 
 # class Point:
 #     def __init__(self, x=0, y=0):
@@ -110,3 +110,5 @@ A.echo_static()
 # # p23 = Point2()
 # # p23.x = 2
 # # p23.y = 2
+
+
