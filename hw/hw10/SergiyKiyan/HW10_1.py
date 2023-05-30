@@ -12,3 +12,5 @@ class Rectangle(Polygon):
 
 square_rect=Rectangle(10,5)
 print(square_rect.square())
+
+#Task 2
