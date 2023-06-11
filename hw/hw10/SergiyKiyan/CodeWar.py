@@ -48,3 +48,34 @@ class Person:
         self.name=name
         self.age=age
         self.info = f"{name}s age is {age}"
+
+#Building Spheres
+
+from math import pi
+class Sphere:
+
+
+    def __init__(self, radius, mass):
+        self.radius = radius
+        self.mass = mass
+
+    def get_radius(self):
+        return self.radius
+
+    def get_mass(self):
+        return self.mass
+
+    def get_volume(self):
+        v = 4/ 3 * pi * pow(self.radius, 3)
+        return round(v, 5)
+
+    def get_surface_area(self):
+        s = 4 * Sphere.pi * pow(self.radius, 2)
+        return round(s, 5)
+
+    def get_density(self):
+        v = self.get_volume()
+        d = self.mass / v
+        return round(d, 5)
+
+
