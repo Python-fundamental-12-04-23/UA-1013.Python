@@ -14,3 +14,29 @@ class Ghost(object):
     self.color = random.choice(["white", "yellow", "purple", "red"])
 
 
+
+# Basic subclasses - Adam and Eve
+
+class Human:
+    def __init__(self):
+        pass
+
+
+class Man(Human):
+    def __init__(self):
+        super().__init__()
+
+
+class Woman(Human):
+    def __init__(self):
+        super().__init__()
+
+
+
+
+def God():
+    adam = Man()
+    eve = Woman()
+    return [adam, eve]
+
+humans = God()
