@@ -133,5 +133,6 @@ async def show_menu(message: types.Message, state: FSMContext, next_page=False, 
     )
 
 
+
 if __name__ == "__main__":
     executor.start_polling(dp, skip_updates=True)
