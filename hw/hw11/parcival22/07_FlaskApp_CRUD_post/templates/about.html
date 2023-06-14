@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>{% block title %} Welcome to FlaskBlog! {% endblock %}</h1>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit dolorem 
+            rem ea eveniet ratione tenetur quae beatae possimus! Perferendis excepturi 
+            quas nobis iste. Totam odio delectus, labore fuga recusandae cumque!</p>
+
+            <a class="btn btn-primary" href="{{url_for('index')}}" role="button">Back to main page</a>
+    </div>
+
+{% endblock %}
