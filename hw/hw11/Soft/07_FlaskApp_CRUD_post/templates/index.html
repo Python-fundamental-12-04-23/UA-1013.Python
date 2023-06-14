@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <style>
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+        .fade-in {
+            animation: fadeIn 2s ease-in;
+        }
+    </style>
+
+    <div style="text-align: center;">
+        <h1 class="fade-in"><b>{% block title %} Welcome to the FlaskBlog! :){% endblock %}</b></h1>
+        {% for post in posts %}
+
+            <a href="{{ url_for('post', post_id=post['id']) }}">
+                <h2>{{ post['title'] }}</h2>
+            </a>
+            <span class="badge badge-primary">{{ post['created'] }}</span>
+            <a href="{{ url_for('edit', id=post['id']) }}">
+                <span class="badge badge-warning">Edit</span>
+            </a>
+            <hr>
+        {% endfor %}
+
+
+    </div>
+{% endblock %}
