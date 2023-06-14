@@ -1,5 +1,5 @@
 
-API_KEY = '6111141908:AAGJ3WNmGnP9JjGv7-o0YYd27rzVFvQishc'
+API_KEY = '  '
 import telebot;
 bot = telebot.TeleBot(API_KEY);
 @bot.message_handler(content_types=['text'])
