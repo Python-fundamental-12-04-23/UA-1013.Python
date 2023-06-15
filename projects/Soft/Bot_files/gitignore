@@ -1,0 +1,9 @@
+# .gitignore
+
+# Ignore .env file
+.env
+.logs.txt
+
+# Ignore other files and directories
+...
+
